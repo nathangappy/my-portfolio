@@ -1,0 +1,172 @@
+.about__description {
+  margin-top: 3rem;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: $primary-font;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      padding-top: 1px;
+      border-bottom: 3px solid red;
+    }
+  }
+
+  p {
+    width: 40%;
+    margin: 10px auto;
+  }
+}
+
+.about__traits {
+  margin-top: 3rem;
+
+  ul {
+    display: flex;
+
+    li {
+      width: 25%;
+      text-align: center;
+
+      i {
+        font-size: 2rem;
+      }
+
+      h4 {
+        margin-top: 1rem;
+      }
+
+      p {
+        line-height: 1.1;
+        margin-top: 3px;
+      }
+
+      &:first-child,
+      &:last-child {
+        margin-top: 7rem;
+      }
+    }
+  }
+}
+
+.about__headshot {
+  position: relative;
+  text-align: center;
+  height: 175px;
+
+  img {
+    border: 5px solid black;
+    margin: 0 auto;
+    position: relative;
+    top: -75px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+
+.about__bio {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  .about__summary {
+    text-align: center;
+    h5 {
+      font-family: $primary-font;
+      font-size: 2rem;
+    }
+    .about__summary--title {
+      letter-spacing: 4px;
+    }
+    .about__summary--description {
+      margin-top: 1rem;
+    }
+
+    .about__social {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 1rem;
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: red;
+      }
+    }
+  }
+
+  .about__skills,
+  .about__summary {
+    width: 30%;
+  }
+}
+
+.about__skills {
+  margin-top: 4.5rem;
+  li {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      padding: 5px;
+    }
+  }
+
+  .js {
+    background: #d70100;
+    width: 85%;
+  }
+  .js + .percentage {
+    background: #dedede;
+    width: 15%;
+  }
+  .react {
+    background: #fa9e2b;
+    width: 90%;
+  }
+  .react + .percentage {
+    width: 10%;
+  }
+  .css-skill {
+    background: #46a142;
+    width: 80%;
+  }
+  .css-skill + .percentage {
+    width: 20%;
+  }
+  .firebase {
+    background: #3db5e7;
+    width: 75%;
+  }
+  .firebase + .percentage {
+    width: 25%;
+  }
+  .html {
+    background: #8d68b5;
+    width: 90%;
+  }
+  .html + .percentage {
+    width: 10%;
+  }
+  .jQuery {
+    background: #7cdcd5;
+    width: 85%;
+  }
+  .jQuery + .percentage {
+    width: 15%;
+  }
+  .percentage {
+    background: #dedede;
+    color: #000;
+    text-align: right;
+  }
+}
