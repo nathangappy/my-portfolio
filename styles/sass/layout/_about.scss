@@ -1,5 +1,5 @@
 .about__description {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align: center;
 
   h2 {
@@ -168,5 +168,60 @@
     background: #dedede;
     color: #000;
     text-align: right;
+  }
+}
+
+@media (max-width: $mobileSize) {
+  .about__description {
+    p {
+      width: 60%;
+    }
+  }
+
+  .about__traits {
+    ul {
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      li {
+        margin-top: 1rem;
+        width: 40%;
+
+        &:first-child,
+        &:last-child {
+          margin-top: 1rem;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .about__headshot {
+    margin-top: 2rem;
+    height: auto;
+    img {
+      position: static;
+    }
+  }
+
+  .about__bio {
+    flex-wrap: wrap;
+
+    .about__summary,
+    .about__skills {
+      width: 100%;
+    }
+
+    .about__skills {
+      order: 2;
+      margin-top: 0rem;
+    }
+
+    .about__summary {
+      margin: 3rem 0;
+    }
   }
 }

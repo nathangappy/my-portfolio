@@ -7,3 +7,9 @@
 ul {
   list-style: none;
 }
+
+@media (max-width: 600px) {
+  .content__container {
+    width: 90%;
+  }
+}

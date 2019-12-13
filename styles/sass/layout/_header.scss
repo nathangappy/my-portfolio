@@ -4,6 +4,11 @@
   text-align: center;
   color: #fff;
 
+  i {
+    display: none;
+    font-size: 2.5rem;
+  }
+
   p {
     font-size: 2rem;
   }
@@ -41,6 +46,11 @@
   li {
     font-size: 1rem;
     text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 
@@ -84,6 +94,54 @@
 
       i {
         font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileSize) {
+  .welcome {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    i {
+      display: block;
+    }
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__hero {
+    position: relative;
+    margin-top: 0;
+    background: #000;
+
+    h1 {
+      font-size: 2rem;
+      padding-top: 12rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 1.5rem;
+    }
+  }
+
+  .header__social {
+    ul {
+      display: block;
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+
+        i {
+          font-size: 2rem;
+        }
       }
     }
   }

@@ -225,11 +225,22 @@ ul {
   list-style: none;
 }
 
+@media (max-width: 600px) {
+  .content__container {
+    width: 90%;
+  }
+}
+
 .welcome {
   width: 100%;
   background: red;
   text-align: center;
   color: #fff;
+}
+
+.welcome i {
+  display: none;
+  font-size: 2.5rem;
 }
 
 .welcome p {
@@ -278,6 +289,11 @@ ul {
 .header__navigation li {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.header__navigation li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .header__hero {
@@ -330,8 +346,51 @@ ul {
   font-size: 1.4rem;
 }
 
+@media (max-width: 750px) {
+  .welcome {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcome i {
+    display: block;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .header__hero {
+    position: relative;
+    margin-top: 0;
+    background: #000;
+  }
+  .header__hero h1 {
+    font-size: 2rem;
+    padding-top: 12rem;
+  }
+  .header__hero p {
+    font-size: 1.5rem;
+  }
+  .header__hero button {
+    font-size: 1.5rem;
+  }
+  .header__social ul {
+    display: block;
+  }
+  .header__social ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  .header__social ul li i {
+    font-size: 2rem;
+  }
+}
+
 .about__description {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align: center;
 }
 
@@ -530,4 +589,51 @@ ul {
   background: #dedede;
   color: #000;
   text-align: right;
+}
+
+@media (max-width: 750px) {
+  .about__description p {
+    width: 60%;
+  }
+  .about__traits ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__traits ul li {
+    margin-top: 1rem;
+    width: 40%;
+  }
+  .about__traits ul li:first-child, .about__traits ul li:last-child {
+    margin-top: 1rem;
+  }
+  .about__traits ul li p {
+    width: 100%;
+  }
+  .about__headshot {
+    margin-top: 2rem;
+    height: auto;
+  }
+  .about__headshot img {
+    position: static;
+  }
+  .about__bio {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__bio .about__summary,
+  .about__bio .about__skills {
+    width: 100%;
+  }
+  .about__bio .about__skills {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 0rem;
+  }
+  .about__bio .about__summary {
+    margin: 3rem 0;
+  }
 }
