@@ -1,0 +1,159 @@
+.portfolio {
+  background: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.portfolio__info {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: $primary-font;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      padding-top: 1px;
+      border-bottom: 3px solid red;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+.portfolio__display {
+  margin-top: 5.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: #fff;
+  .more-info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    h3 {
+      text-align: left;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #fff;
+      margin-right: 10px;
+    }
+  }
+
+  .one {
+    background: #127aff;
+
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+  }
+  .two {
+    background: #d80100;
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+  }
+  .three {
+    background: #8d68b5;
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+    img {
+      transform: scale(1.1);
+    }
+  }
+  .four {
+    background: #fcd876;
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+  }
+  .five {
+    background: #62a8fd;
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+  }
+  .six {
+    background: #ed8f8e;
+    &:hover {
+      .more-info {
+        display: flex;
+      }
+    }
+  }
+  .portfolio__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $tabletSize) {
+  .portfolio__display {
+    grid-template-columns: 1fr 1fr;
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+      &:hover {
+        .more-info {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileSize) {
+  .portfolio__info {
+    width: 100%;
+
+    p {
+      width: 80%;
+      margin: 0.5rem auto;
+    }
+  }
+  .portfolio__display {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nathan Gappy</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/69fb755ab9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <div class="welcome">
       <p>Welcome!</p>
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="mobile-icon"></i>
     </div>
     <!-- Header -->
     <header class="header" id="home">
       <div class="content__container">
-        <nav class="header__navigation">
+        <nav class="header__navigation" id="mobile-nav">
           <p><i class="fas fa-laptop-code"></i>NG</p>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li>Portfolio</li>
-            <li><a href="#about">About</a></li>
-            <li>Experience</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li class="header__link" onclick="closeSideMenu()"><a href="#home">Home</a></li>
+            <li class="header__link" onclick="closeSideMenu()"><a href="#portfolio">Portfolio</a></li>
+            <li class="header__link" onclick="closeSideMenu()"><a href="#about">About</a></li>
+            <li class="header__link" onclick="closeSideMenu()">Experience</li>
+            <li class="header__link" onclick="closeSideMenu()">Blog</li>
+            <li class="header__link" onclick="closeSideMenu()">Contact</li>
           </ul>
         </nav>
         <div class="header__hero">
@@ -35,9 +35,15 @@
         </div>
         <div class="header__social">
           <ul>
-            <li><i class="fab fa-github"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
+            <li>
+              <a href="https://github.com/nathangappy" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nathan-gappy-a77223156/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/softwarenate" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,83 +51,186 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="content__container">
-      <div class="about__description">
-        <h2>about me</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure at vel voluptatum ab!</p>
-      </div>
-      <div class="about__traits">
-        <ul>
-          <li>
-            <div><i class="far fa-file-code"></i></div>
-            <h4>Clean Code</h4>
-            <p>My code is always as dry and modular as I can make it</p>
-          </li>
-          <li>
-            <div><i class="fas fa-bug"></i></div>
-            <h4>Troubleshooting</h4>
-            <p>My IT past taught me how to troubleshoot technical issues</p>
-          </li>
-          <li>
-            <div><i class="fas fa-book"></i></div>
-            <h4>Quick Learner</h4>
-            <p>Tech is a learning industry, and I can learn alot in a short amount of time</p>
-          </li>
-          <li>
-            <div><i class="fas fa-mobile"></i></div>
-            <h4>Responsive</h4>
-            <p>I make sure my projects look good on all devices and browsers</p>
-          </li>
-        </ul>
-      </div>
-      <div class="about__headshot">
-        <div>
-          <img src="./img/nathan-headshot.jpeg" alt="Headshot of Nathan">
+        <div class="about__description">
+          <h2>about me</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure at vel voluptatum ab!</p>
         </div>
-      </div>
-      <div class="about__bio">
-        <div class="about__skills">
+        <div class="about__traits">
           <ul>
             <li>
-              <p class='js'><span>JS</span></p>
-              <p class='percentage'>85%</p>
+              <div><i class="far fa-file-code"></i></div>
+              <h4>Clean Code</h4>
+              <p>My code is always as dry and modular as I can make it</p>
             </li>
             <li>
-              <p class='react'><span>React</span></p>
-              <p class='percentage'>90%</p>
+              <div><i class="fas fa-bug"></i></div>
+              <h4>Troubleshooting</h4>
+              <p>My IT past taught me how to troubleshoot technical issues</p>
             </li>
             <li>
-              <p class='css-skill'><span>CSS</span></p>
-              <p class='percentage'>80%</p>
+              <div><i class="fas fa-book"></i></div>
+              <h4>Quick Learner</h4>
+              <p>Tech is a learning industry, and I can learn alot in a short amount of time</p>
+            </li>
+            <li>
+              <div><i class="fas fa-mobile"></i></div>
+              <h4>Responsive</h4>
+              <p>I make sure my projects look good on all devices and browsers</p>
             </li>
           </ul>
         </div>
-        <div class="about__summary">
-          <h5>Nathan Gappy</h5>
-          <p class='about__summary--title'>Front-End Developer</p>
-          <p class='about__summary--description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit a facere perferendis maiores. Repudiandae, accusantium. Fugit, commodi veritatis? Reiciendis ipsa eum excepturi corrupti nulla?</p>
-          <ul class='about__social'>
-            <li><i class="fab fa-github"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-          </ul>
+        <div class="about__headshot">
+          <div>
+            <img src="./img/nathan-headshot.jpeg" alt="Headshot of Nathan" />
+          </div>
         </div>
-        <div class="about__skills">
-          <ul>
-            <li>
-              <p class='firebase'><span>Firebase</span></p>
-              <p class='percentage'>75%</p>
-            </li>
-            <li>
-              <p class='html'><span>HTML</span></p>
-              <p class='percentage'>90%</p>
-            </li>
-            <li>
-              <p class='jQuery'><span>jQuery</span></p>
-              <p class='percentage'>85%</p>
-            </li>
-          </ul>
+        <div class="about__bio">
+          <div class="about__skills">
+            <ul>
+              <li>
+                <p class="js"><span>JS</span></p>
+                <p class="percentage">85%</p>
+              </li>
+              <li>
+                <p class="react"><span>React</span></p>
+                <p class="percentage">90%</p>
+              </li>
+              <li>
+                <p class="css-skill"><span>CSS</span></p>
+                <p class="percentage">80%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about__summary">
+            <h5>Nathan Gappy</h5>
+            <p class="about__summary--title">Front-End Developer</p>
+            <p class="about__summary--description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit a facere perferendis maiores. Repudiandae, accusantium. Fugit,
+              commodi veritatis? Reiciendis ipsa eum excepturi corrupti nulla?
+            </p>
+            <ul class="about__social">
+              <li>
+                <a href="https://github.com/nathangappy" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/nathan-gappy-a77223156/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/softwarenate" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="about__skills">
+            <ul>
+              <li>
+                <p class="firebase"><span>Firebase</span></p>
+                <p class="percentage">75%</p>
+              </li>
+              <li>
+                <p class="html"><span>HTML</span></p>
+                <p class="percentage">90%</p>
+              </li>
+              <li>
+                <p class="jQuery"><span>jQuery</span></p>
+                <p class="percentage">85%</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
     </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="content__container">
+        <div class="portfolio__info">
+          <h2>Portfolio</h2>
+          <p>
+            Hover over each project to obtain more information. There are links to the live version and github repo for each!
+          </p>
+        </div>
+        <div class="portfolio__display">
+          <div class="portfolio__item one">
+            <a href="https://nathangappy.github.io/financialhub/" target="_blank">
+              <img src="./img/financehub.png" alt="" />
+            </a>
+            <div class="more-info">
+              <h3>FinanceHub</h3>
+              <p>A stock market application built with react that allows users to search for stock news and data</p>
+              <div>
+                <a href="https://nathangappy.github.io/financialhub/">View Live</a>
+                <a href="https://github.com/nathangappy/financialhub">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item two">
+            Coming Soon!
+            <div class="more-info">
+              <h3>Sportsdale</h3>
+              <p>Currently working on an e-commerce site built using react, redux, and firebase. Come back soon to see it!</p>
+              <div>
+                <a href="">View Live</a>
+                <a href="">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item three">
+            <a href="https://nathangappy.github.io/nathanGappyprojectThree/" target="_blank">
+              <img src="./img/impossible.png" alt="" />
+            </a>
+            <div class="more-info">
+              <h3>Country Impossible</h3>
+              <p>A fun game where users are quizzed on their knowledge of the world's flags!</p>
+              <div>
+                <a href="">View Live</a>
+                <a href="">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item four">
+            <a href="https://nathangappy.github.io/tictactoe/" target="_blank">
+              <img src="./img/tictactoe-transparent.png" alt="" />
+            </a>
+            <div class="more-info">
+              <h3>TicTacToe</h3>
+              <p>The classic TicTacToe game. Play against an opponent or against the computer!</p>
+              <div>
+                <a href="">View Live</a>
+                <a href="">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item five">
+            Coming Soon!
+            <div class="more-info">
+              <h3>Superhero Search</h3>
+              <p>Search and view information about all of the marvel characters. Built using React, and the Marvel API</p>
+              <div>
+                <a href="">View Live</a>
+                <a href="">Github Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item six">
+            <a href="https://nathangappy.github.io/nathan-gappy-project-two/" target="_blank">
+              <img src="./img/shoe-kloset.png" alt="" />
+            </a>
+            <div class="more-info">
+              <h3>ShoeKloset PSD</h3>
+              <p>A project that was done at bootcamp that involved creating a site based off a PSD</p>
+              <div>
+                <a href="">View Live</a>
+                <a href="">Github Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>

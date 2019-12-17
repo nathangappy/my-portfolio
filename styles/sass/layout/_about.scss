@@ -63,7 +63,7 @@
     margin: 0 auto;
     position: relative;
     top: -75px;
-    width: 200px;
+    width: 225px;
     border-radius: 50%;
   }
 }
@@ -169,6 +169,9 @@
     color: #000;
     text-align: right;
   }
+}
+
+@media (max-width: $tabletSize) {
 }
 
 @media (max-width: $mobileSize) {
