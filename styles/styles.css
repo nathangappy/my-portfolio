@@ -902,3 +902,115 @@ ul {
         grid-template-rows: repeat(6, 1fr);
   }
 }
+
+.message {
+  padding: 4rem 0 6rem 0;
+  background: #1f153f;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.message h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.message p {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.message form {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.message form input {
+  padding: 1rem;
+  border: none;
+  width: 48%;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: #fff;
+}
+
+.message form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.message form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.message form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.message form input::placeholder {
+  color: #fff;
+}
+
+.message form input[type='text'] {
+  margin-right: 3.5%;
+}
+
+.message form textarea {
+  height: 150px;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  display: block;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+.message form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.message form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.message form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.message form textarea::placeholder {
+  color: #fff;
+}
+
+.message form textarea:focus {
+  border: none;
+}
+
+.message form button {
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border: 1px solid white;
+}
+
+.message form button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 750px) {
+  .message p {
+    width: 70%;
+  }
+  .message .message__form input {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
