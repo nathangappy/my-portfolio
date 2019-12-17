@@ -126,6 +126,7 @@
 
 @media (max-width: $tabletSize) {
   .portfolio__display {
+    margin-top: 3.5rem;
     grid-template-columns: 1fr 1fr;
 
     .one,
@@ -140,6 +141,9 @@
         }
       }
     }
+  }
+  .desktop-info {
+    display: none;
   }
 }
 

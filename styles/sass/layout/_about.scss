@@ -176,6 +176,23 @@
 }
 
 @media (max-width: $tabletSize) {
+  .about__bio {
+    flex-wrap: wrap;
+
+    .about__summary,
+    .about__skills {
+      width: 100%;
+    }
+
+    .about__skills {
+      order: 2;
+      margin-top: 0rem;
+    }
+
+    .about__summary {
+      margin: 3rem 0;
+    }
+  }
 }
 
 @media (max-width: $mobileSize) {
@@ -214,21 +231,21 @@
     }
   }
 
-  .about__bio {
-    flex-wrap: wrap;
+  // .about__bio {
+  //   flex-wrap: wrap;
 
-    .about__summary,
-    .about__skills {
-      width: 100%;
-    }
+  //   .about__summary,
+  //   .about__skills {
+  //     width: 100%;
+  //   }
 
-    .about__skills {
-      order: 2;
-      margin-top: 0rem;
-    }
+  //   .about__skills {
+  //     order: 2;
+  //     margin-top: 0rem;
+  //   }
 
-    .about__summary {
-      margin: 3rem 0;
-    }
-  }
+  //   .about__summary {
+  //     margin: 3rem 0;
+  //   }
+  // }
 }
