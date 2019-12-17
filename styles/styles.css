@@ -1005,6 +1005,12 @@ ul {
   background: rgba(255, 255, 255, 0.8);
 }
 
+@media (max-width: 1000px) {
+  .message .message__form input[type='text'] {
+    margin-right: 3.3%;
+  }
+}
+
 @media (max-width: 750px) {
   .message p {
     width: 80%;

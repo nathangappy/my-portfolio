@@ -76,6 +76,14 @@
   }
 }
 
+@media (max-width: $tabletSize) {
+  .message .message__form {
+    input[type='text'] {
+      margin-right: 3.3%;
+    }
+  }
+}
+
 @media (max-width: $mobileSize) {
   .message {
     p {
