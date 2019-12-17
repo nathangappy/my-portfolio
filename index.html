@@ -14,7 +14,7 @@
       <p>Welcome!</p>
       <i class="fas fa-bars" id="mobile-icon"></i>
     </div>
-    <!-- Header -->
+    <!-- Section: Header -->
     <header class="header" id="home">
       <div class="content__container">
         <nav class="header__navigation" id="mobile-nav">
@@ -23,15 +23,14 @@
             <li class="header__link" onclick="closeSideMenu()"><a href="#home">Home</a></li>
             <li class="header__link" onclick="closeSideMenu()"><a href="#portfolio">Portfolio</a></li>
             <li class="header__link" onclick="closeSideMenu()"><a href="#about">About</a></li>
-            <li class="header__link" onclick="closeSideMenu()">Experience</li>
-            <li class="header__link" onclick="closeSideMenu()">Blog</li>
-            <li class="header__link" onclick="closeSideMenu()">Contact</li>
+            <li class="header__link" onclick="closeSideMenu()"><a href="#resume">Resume</a></li>
+            <li class="header__link" onclick="closeSideMenu()"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header__hero">
           <h1>Hello!<br />My name is Nathan</h1>
           <p>Front-End Developer</p>
-          <button>My Recent Work</button>
+          <a href="#portfolio">My Recent Work</a>
         </div>
         <div class="header__social">
           <ul>
@@ -48,12 +47,12 @@
         </div>
       </div>
     </header>
-    <!-- About -->
+    <!-- Section: About -->
     <section class="about" id="about">
       <div class="content__container">
         <div class="about__description">
           <h2>about me</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure at vel voluptatum ab!</p>
+          <p>Bootcamp grad looking to take on the tech world!</p>
         </div>
         <div class="about__traits">
           <ul>
@@ -144,7 +143,7 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Section: Portfolio -->
     <section class="portfolio" id="portfolio">
       <div class="content__container">
         <div class="portfolio__info">
@@ -156,14 +155,14 @@
         <div class="portfolio__display">
           <div class="portfolio__item one">
             <a href="https://nathangappy.github.io/financialhub/" target="_blank">
-              <img src="./img/financehub.png" alt="" />
+              <img src="./img/financehub.png" alt="screenshot of financeHub" />
             </a>
             <div class="more-info">
               <h3>FinanceHub</h3>
               <p>A stock market application built with react that allows users to search for stock news and data</p>
               <div>
-                <a href="https://nathangappy.github.io/financialhub/">View Live</a>
-                <a href="https://github.com/nathangappy/financialhub">Github Repo</a>
+                <a href="https://nathangappy.github.io/financialhub/" target="_blank">View Live</a>
+                <a href="https://github.com/nathangappy/financialhub" target="_blank">Github Repo</a>
               </div>
             </div>
           </div>
@@ -180,27 +179,27 @@
           </div>
           <div class="portfolio__item three">
             <a href="https://nathangappy.github.io/nathanGappyprojectThree/" target="_blank">
-              <img src="./img/impossible.png" alt="" />
+              <img src="./img/impossible.png" alt="screenshot of country impossible" />
             </a>
             <div class="more-info">
               <h3>Country Impossible</h3>
               <p>A fun game where users are quizzed on their knowledge of the world's flags!</p>
               <div>
-                <a href="">View Live</a>
-                <a href="">Github Repo</a>
+                <a href="https://nathangappy.github.io/nathanGappyprojectThree/" target="_blank">View Live</a>
+                <a href="https://github.com/nathangappy/nathanGappyprojectThree" target="_blank">Github Repo</a>
               </div>
             </div>
           </div>
           <div class="portfolio__item four">
             <a href="https://nathangappy.github.io/tictactoe/" target="_blank">
-              <img src="./img/tictactoe-transparent.png" alt="" />
+              <img src="./img/tictactoe-transparent.png" alt="screenshot of tictactoe" />
             </a>
             <div class="more-info">
               <h3>TicTacToe</h3>
               <p>The classic TicTacToe game. Play against an opponent or against the computer!</p>
               <div>
-                <a href="">View Live</a>
-                <a href="">Github Repo</a>
+                <a href="https://nathangappy.github.io/tictactoe/" target="_blank">View Live</a>
+                <a href="https://github.com/nathangappy/tictactoe" target="_blank">Github Repo</a>
               </div>
             </div>
           </div>
@@ -208,7 +207,10 @@
             Coming Soon!
             <div class="more-info">
               <h3>Superhero Search</h3>
-              <p>Search and view information about all of the marvel characters. Built using React, and the Marvel API</p>
+              <p>
+                Search and view information about all of the marvel characters. Built using React, and the Marvel API. Come back soon to search some
+                heroes.
+              </p>
               <div>
                 <a href="">View Live</a>
                 <a href="">Github Repo</a>
@@ -217,20 +219,21 @@
           </div>
           <div class="portfolio__item six">
             <a href="https://nathangappy.github.io/nathan-gappy-project-two/" target="_blank">
-              <img src="./img/shoe-kloset.png" alt="" />
+              <img src="./img/shoe-kloset.png" alt="screenshot of shoe kloset" />
             </a>
             <div class="more-info">
               <h3>ShoeKloset PSD</h3>
               <p>A project that was done at bootcamp that involved creating a site based off a PSD</p>
               <div>
-                <a href="">View Live</a>
-                <a href="">Github Repo</a>
+                <a href="https://nathangappy.github.io/nathan-gappy-project-two/" target="_blank">View Live</a>
+                <a href="https://github.com/nathangappy/nathan-gappy-project-two" target="_blank">Github Repo</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Section: Message -->
     <script src="./script.js"></script>
   </body>
 </html>

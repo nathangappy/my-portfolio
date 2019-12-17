@@ -227,7 +227,7 @@ ul {
 
 @media (max-width: 1300px) {
   .content__container {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -296,6 +296,10 @@ ul {
   color: #fff;
 }
 
+.header__navigation li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
 .header__hero {
   margin-top: 10rem;
 }
@@ -315,13 +319,18 @@ ul {
   text-transform: uppercase;
 }
 
-.header__hero button {
+.header__hero a {
   margin: 3rem 0;
   font-size: 2rem;
   padding: 1rem 3rem;
   background: #fff;
   border: none;
   color: #333;
+  text-decoration: none;
+}
+
+.header__hero a:hover {
+  background: #ccc;
 }
 
 .header__social {
@@ -350,6 +359,11 @@ ul {
   font-size: 1.4rem;
 }
 
+.header__social ul li i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media (max-width: 1000px) {
   .header__navigation ul {
     width: 70%;
@@ -372,14 +386,18 @@ ul {
   .welcome i {
     display: block;
   }
-  .header .close {
-    width: 0%;
+  .header .open {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header__navigation {
+    display: none;
     position: absolute;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    width: 70%;
+    width: 0%;
     top: 10;
     right: 0;
     z-index: 1;
@@ -416,7 +434,7 @@ ul {
   .header__hero p {
     font-size: 1.5rem;
   }
-  .header__hero button {
+  .header__hero a {
     font-size: 1.5rem;
   }
   .header__social ul {
@@ -546,6 +564,11 @@ ul {
 .about__bio .about__summary .about__social i {
   font-size: 1.5rem;
   color: red;
+}
+
+.about__bio .about__summary .about__social i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .about__bio .about__skills,
@@ -852,7 +875,7 @@ ul {
 
 @media (max-width: 750px) {
   .portfolio__info {
-    width: 100%;
+    width: 95%;
   }
   .portfolio__info p {
     width: 80%;
@@ -861,6 +884,7 @@ ul {
   .portfolio__display {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-gap: 50px;
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
   }

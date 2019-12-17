@@ -145,7 +145,7 @@
 
 @media (max-width: $mobileSize) {
   .portfolio__info {
-    width: 100%;
+    width: 95%;
 
     p {
       width: 80%;
@@ -154,6 +154,7 @@
   }
   .portfolio__display {
     grid-template-columns: 1fr;
+    grid-gap: 50px;
     grid-template-rows: repeat(6, 1fr);
   }
 }
