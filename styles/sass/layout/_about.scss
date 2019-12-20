@@ -122,6 +122,11 @@
 
     p {
       padding: 5px;
+
+      &:nth-of-type(2) {
+        font-size: 0.8rem;
+        align-self: center;
+      }
     }
   }
 
@@ -198,7 +203,7 @@
 @media (max-width: $mobileSize) {
   .about__description {
     p {
-      width: 60%;
+      width: 80%;
     }
   }
 
