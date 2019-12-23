@@ -884,6 +884,12 @@ ul {
   background: #777;
 }
 
+@media (max-width: 1000px) {
+  .portfolio__item .portfolio__item--info ul li {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 750px) {
   .portfolio__item {
     -webkit-box-orient: vertical;
@@ -909,9 +915,6 @@ ul {
   .portfolio__item .portfolio__item--info p,
   .portfolio__item .portfolio__item--info ul {
     margin-bottom: 20px;
-  }
-  .portfolio__item .portfolio__item--info ul li {
-    margin-right: 10px;
   }
   .two .portfolio__item--image,
   .four .portfolio__item--image {
@@ -1027,6 +1030,7 @@ ul {
 
 .message form button:hover {
   background: rgba(255, 255, 255, 0.8);
+  color: #333;
 }
 
 @media (max-width: 1000px) {

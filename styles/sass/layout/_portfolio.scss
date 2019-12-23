@@ -140,6 +140,14 @@
   }
 }
 
+@media (max-width: $tabletSize) {
+  .portfolio__item .portfolio__item--info {
+    ul li {
+      margin-right: 10px;
+    }
+  }
+}
+
 @media (max-width: $mobileSize) {
   .portfolio__item {
     flex-direction: column;
@@ -161,10 +169,6 @@
       p,
       ul {
         margin-bottom: 20px;
-      }
-
-      ul li {
-        margin-right: 10px;
       }
     }
   }
