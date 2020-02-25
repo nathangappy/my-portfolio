@@ -215,6 +215,11 @@ li {
   font-family: "Raleway", sans-serif;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
 .content__container {
   width: 70%;
   max-width: 1200px;
@@ -587,7 +592,7 @@ ul {
 }
 
 .about__skills li {
-  color: #fff;
+  color: black;
   margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +600,10 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about__skills li i {
+  font-size: 2.5rem;
 }
 
 .about__skills li p {
@@ -610,39 +619,39 @@ ul {
 
 .about__skills .js {
   background: #d70100;
-  width: 85%;
+  width: 90%;
 }
 
 .about__skills .js + .percentage {
   background: #dedede;
-  width: 15%;
+  width: 10%;
 }
 
 .about__skills .react {
   background: #fa9e2b;
-  width: 90%;
+  width: 85%;
 }
 
 .about__skills .react + .percentage {
-  width: 10%;
+  width: 15%;
 }
 
 .about__skills .css-skill {
   background: #46a142;
-  width: 80%;
+  width: 90%;
 }
 
 .about__skills .css-skill + .percentage {
-  width: 20%;
+  width: 10%;
 }
 
-.about__skills .firebase {
+.about__skills .node {
   background: #3db5e7;
-  width: 75%;
+  width: 85%;
 }
 
-.about__skills .firebase + .percentage {
-  width: 25%;
+.about__skills .node + .percentage {
+  width: 15%;
 }
 
 .about__skills .html {
@@ -654,19 +663,70 @@ ul {
   width: 10%;
 }
 
-.about__skills .jQuery {
+.about__skills .mongo {
   background: #7cdcd5;
-  width: 85%;
+  width: 80%;
 }
 
-.about__skills .jQuery + .percentage {
-  width: 15%;
+.about__skills .mongo + .percentage {
+  width: 20%;
 }
 
 .about__skills .percentage {
   background: #dedede;
   color: #000;
   text-align: right;
+}
+
+.about__competencies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__competencies h2 {
+  font-size: 2rem;
+}
+
+.about__competencies h2::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  padding-top: 1px;
+  border-bottom: 3px solid red;
+}
+
+.about__competencies ul {
+  margin: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.about__competencies li {
+  text-align: center;
+  margin: 1rem;
+}
+
+.about__competencies div {
+  margin: 0.5rem;
+  border-radius: 50%;
+  padding: 1.3rem;
+  border: 3px solid black;
+}
+
+.about__competencies i {
+  font-size: 3.5rem;
+  color: black;
 }
 
 @media (max-width: 1000px) {
@@ -686,6 +746,9 @@ ul {
   }
   .about__bio .about__summary {
     margin: 3rem 0;
+  }
+  .about__competencies li {
+    margin: 0.5rem;
   }
 }
 
@@ -716,6 +779,25 @@ ul {
   }
   .about__headshot img {
     position: static;
+  }
+  .about__competencies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__competencies ul {
+    margin: 2rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
