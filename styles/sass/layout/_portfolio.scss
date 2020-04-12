@@ -38,7 +38,7 @@
 }
 .two {
   .portfolio__item--image {
-    background: #8d68b5;
+    background: #fb0001;
     &:hover {
       transform: rotate(10deg);
     }
@@ -52,7 +52,7 @@
 }
 .three {
   .portfolio__item--image {
-    background: #fcd876;
+    background: #8d68b5;
     &:hover {
       transform: rotate(-10deg);
     }
@@ -66,7 +66,7 @@
 }
 .four {
   .portfolio__item--image {
-    background: #ed8f8d;
+    background: #fcd876;
     &:hover {
       transform: rotate(10deg);
     }
@@ -117,9 +117,10 @@
     ul {
       margin-bottom: 15px;
       display: flex;
+      flex-wrap: wrap;
 
       li {
-        margin-right: 2rem;
+        margin-right: 1rem;
         border-radius: 10px;
         padding: 5px;
         transition: 0.6s;
@@ -143,7 +144,8 @@
 @media (max-width: $tabletSize) {
   .portfolio__item .portfolio__item--info {
     ul li {
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
     }
   }
 }

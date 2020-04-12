@@ -845,7 +845,7 @@ ul {
 }
 
 .two .portfolio__item--image {
-  background: #8d68b5;
+  background: #fb0001;
 }
 
 .two .portfolio__item--image:hover {
@@ -863,7 +863,7 @@ ul {
 }
 
 .three .portfolio__item--image {
-  background: #fcd876;
+  background: #8d68b5;
 }
 
 .three .portfolio__item--image:hover {
@@ -881,7 +881,7 @@ ul {
 }
 
 .four .portfolio__item--image {
-  background: #ed8f8d;
+  background: #fcd876;
 }
 
 .four .portfolio__item--image:hover {
@@ -944,10 +944,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio__item .portfolio__item--info ul li {
-  margin-right: 2rem;
+  margin-right: 1rem;
   border-radius: 10px;
   padding: 5px;
   -webkit-transition: 0.6s;
@@ -968,7 +970,8 @@ ul {
 
 @media (max-width: 1000px) {
   .portfolio__item .portfolio__item--info ul li {
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
 }
 
