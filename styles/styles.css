@@ -629,11 +629,11 @@ ul {
 
 .about__skills .react {
   background: #fa9e2b;
-  width: 85%;
+  width: 90%;
 }
 
 .about__skills .react + .percentage {
-  width: 15%;
+  width: 10%;
 }
 
 .about__skills .css-skill {
@@ -831,8 +831,8 @@ ul {
 }
 
 .one .portfolio__item--image:hover {
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .one li {
@@ -840,8 +840,8 @@ ul {
 }
 
 .one li:hover {
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .two .portfolio__item--image {
@@ -849,51 +849,69 @@ ul {
 }
 
 .two .portfolio__item--image:hover {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-
-.two li {
-  border: 2px solid #8d68b5;
-}
-
-.two li:hover {
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-}
-
-.three .portfolio__item--image {
-  background: #8d68b5;
-}
-
-.three .portfolio__item--image:hover {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
 
-.three li {
-  border: 2px solid #fcd876;
+.two li {
+  border: 2px solid #fb0001;
 }
 
-.three li:hover {
+.two li:hover {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
 
-.four .portfolio__item--image {
-  background: #fcd876;
+.three .portfolio__item--image {
+  background: #46a142;
 }
 
-.four .portfolio__item--image:hover {
+.three .portfolio__item--image:hover {
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
 
+.three li {
+  border: 2px solid #46a142;
+}
+
+.three li:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.four .portfolio__item--image {
+  background: #8d68b5;
+}
+
+.four .portfolio__item--image:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
 .four li {
-  border: 2px solid #ed8f8d;
+  border: 2px solid #8d68b5;
 }
 
 .four li:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.five .portfolio__item--image {
+  background: #fcd876;
+}
+
+.five .portfolio__item--image:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.five li {
+  border: 2px solid #fcd876;
+}
+
+.five li:hover {
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
 }
